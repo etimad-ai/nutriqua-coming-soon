@@ -1,90 +1,97 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Nutriqua.fit - Coming Soon</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.2.19/tailwind.min.css">
     <style>
-        @keyframes pulse {
-            0%, 100% { transform: scale(1); }
-            50% { transform: scale(1.05); }
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            color: #333;
+            line-height: 1.6;
         }
-        .animate-pulse-slow {
-            animation: pulse 3s infinite;
+        header {
+            background: #88c399;
+            color: white;
+            text-align: center;
+            padding: 50px 20px;
         }
-        @media (max-width: 640px) {
-            .feature-grid {
-                display: grid;
-                grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
-                gap: 1rem;
-            }
+        header h1 {
+            font-size: 2.5em;
+            margin: 0;
+        }
+        header p {
+            font-size: 1.2em;
+        }
+        section {
+            padding: 20px;
+            max-width: 800px;
+            margin: 20px auto;
+            text-align: center;
+        }
+        section h2 {
+            font-size: 1.8em;
+            margin-bottom: 10px;
+            color: #88c399;
+        }
+        section ul {
+            list-style: none;
+            padding: 0;
+        }
+        section ul li {
+            margin: 10px 0;
+        }
+        .cta {
+            background: #f4f4f4;
+            padding: 20px;
+            border-radius: 10px;
+            margin-top: 20px;
+        }
+        footer {
+            text-align: center;
+            padding: 20px;
+            background: #333;
+            color: white;
+        }
+        footer a {
+            color: #88c399;
+            text-decoration: none;
+        }
+        footer a:hover {
+            text-decoration: underline;
         }
     </style>
 </head>
-<body class="min-h-screen bg-gradient-to-br from-green-50 to-blue-50 flex items-center justify-center p-4">
-    <div class="w-full max-w-2xl mx-auto text-center px-4 sm:px-6">
-        <div class="animate-pulse-slow">
-            <h1 class="text-4xl sm:text-5xl font-bold text-green-600 mb-4">Nutriqua.fit</h1>
-        </div>
-        
-        <div class="bg-white rounded-2xl shadow-xl p-4 sm:p-8 mt-6">
-            <h2 class="text-2xl sm:text-3xl font-semibold text-gray-800 mb-4">Coming Soon</h2>
-            
-            <p class="text-base sm:text-lg text-gray-600 mb-6 px-2 sm:px-6">
-                We're working hard to bring you a revolutionary dietician platform that will transform your nutrition journey.
-            </p>
-            
-            <div class="feature-grid flex flex-col sm:flex-row justify-center space-y-6 sm:space-y-0 sm:space-x-4 mb-8">
-                <div class="text-center">
-                    <div class="w-16 h-16 bg-green-100 rounded-full flex items-center justify-center mb-2 mx-auto">
-                        <svg class="w-8 h-8 text-green-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2"></path>
-                        </svg>
-                    </div>
-                    <p class="text-gray-600">Personalized Plans</p>
-                </div>
-                
-                <div class="text-center">
-                    <div class="w-16 h-16 bg-blue-100 rounded-full flex items-center justify-center mb-2 mx-auto">
-                        <svg class="w-8 h-8 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"></path>
-                        </svg>
-                    </div>
-                    <p class="text-gray-600">Real-time Tracking</p>
-                </div>
-                
-                <div class="text-center">
-                    <div class="w-16 h-16 bg-purple-100 rounded-full flex items-center justify-center mb-2 mx-auto">
-                        <svg class="w-8 h-8 text-purple-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z"></path>
-                        </svg>
-                    </div>
-                    <p class="text-gray-600">Expert Support</p>
-                </div>
-            </div>
-            
-            <div class="text-gray-500 text-sm px-4">
-                For updates and early access, contact us at:<br class="sm:hidden"> 
-                <a href="mailto:info@nutriqua.fit" class="text-green-600 hover:text-green-700 whitespace-nowrap">slkparveen24@gmail.com</a>
-            </div>
-        </div>
-
-        <!-- Updated Social Links - Only Instagram and Facebook -->
-        <div class="mt-6 flex justify-center space-x-6">
-            <!-- Instagram Icon -->
-            <a href="#" class="text-gray-600 hover:text-green-600 transition-colors" aria-label="Follow us on Instagram">
-                <svg class="w-7 h-7" fill="currentColor" viewBox="0 0 24 24">
-                    <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324zM12 16a4 4 0 110-8 4 4 0 010 8zm6.406-11.845a1.44 1.44 0 100 2.881 1.44 1.44 0 000-2.881z"/>
-                </svg>
-            </a>
-            <!-- Facebook Icon -->
-            <a href="#" class="text-gray-600 hover:text-green-600 transition-colors" aria-label="Follow us on Facebook">
-                <svg class="w-7 h-7" fill="currentColor" viewBox="0 0 24 24">
-                    <path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/>
-                </svg>
-            </a>
-        </div>
-    </div>
+<body>
+    <header>
+        <h1>Welcome to Nutriqua.fit</h1>
+        <p>Your Personalized Dietician App, Coming Soon!</p>
+        <p>We’re currently working hard behind the scenes to bring Nutriqua.fit to life. Stay tuned for updates!</p>
+    </header>
+    <section>
+        <h2>What We Offer</h2>
+        <ul>
+            <li><strong>Personalized Diet Plans:</strong> Tailored to your lifestyle and goals.</li>
+            <li><strong>Expert Guidance:</strong> Direct access to professional dieticians.</li>
+            <li><strong>Smart Tracking:</strong> Monitor your progress with ease.</li>
+            <li><strong>Healthy Recipes:</strong> Delicious and easy-to-make options.</li>
+        </ul>
+    </section>
+    <section class="cta">
+        <h2>Contact Us</h2>
+        <p>For inquiries or updates, please contact us at:</p>
+        <p><strong>Email:</strong> <a href="mailto:slkparveen24@gmail.com">slkparveen24@gmail.com</a></p>
+    </section>
+    <footer>
+        <p>Contact us at <a href="mailto:slkparveen24@gmail.com">slkparveen24@gmail.com</a></p>
+        <p>Follow us on:
+            <a href="#">Instagram</a> |
+            <a href="#">Twitter</a> |
+            <a href="#">Facebook</a>
+        </p>
+        <p>© 2024 Nutriqua.fit. All rights reserved.</p>
+    </footer>
 </body>
 </html>
